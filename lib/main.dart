@@ -56,21 +56,21 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   void _takePhoto() async {
-    try {
-      await _initializeControllerFuture; // Wait for camera initialization
+    // try {
+    //   await _initializeControllerFuture; // Wait for camera initialization
 
-      final path = join(
-        (await getTemporaryDirectory()).path,
-        '${DateTime.now()}.png',
-      );
+    //   final path = join(
+    //     (await getTemporaryDirectory()).path,
+    //     '${DateTime.now()}.png',
+    //   );
 
-      await _controller.takePicture();
+    //   await _controller.takePicture();
 
-      // Process the captured photo (e.g., save to database, display on UI)
-      print('Photo saved at $path');
-    } catch (e) {
-      print('Error taking photo: $e');
-    }
+    //   // Process the captured photo (e.g., save to database, display on UI)
+    //   print('Photo saved at $path');
+    // } catch (e) {
+    //   print('Error taking photo: $e');
+    // }
   }
 
   @override
